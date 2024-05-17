@@ -73,7 +73,7 @@ var = input("Enter a English character ")
 vowels = ["a","e","i","o","u"]
 if var in vowels:
     print("It is a vowel")
-elif:
+else:
     print("It is not a consonant")
 
 
@@ -103,8 +103,7 @@ else:
     pass
 
 
-# TASK-10: Write a program that displays ―Kamran Akmal‖ on output, if score >30, Shoaib Akhtar, 
-# if 20<score <30, and Shahid Afridi if 10<score <20.
+# TASK-10:
 
 score = int(input("Enter the player score"))
 if score > 30:
@@ -133,19 +132,20 @@ else:
 # TASK-12
 
 user_inp = input("Enter a character ")
-if user_inp.islower() == True:
+ascii_code = ord(user_inp)
+if 65 <= ascii_code <= 90:
+    print("It is a upper case")
+elif 97 <= ascii_code <= 122:
     print("It is a lower case")
-elif user_inp.isupper() == True:
-    print("It is a uppercase")
 
 
 # TASK-13
 
 inp = input("Enter a character ")
 if len(inp) > 1:
-    print("enter single character")
+    print("enter single character only")
     
-if len(inp) ==1:
+if len(inp) == 1:
     if inp.isalpha():
         print("it is a character")
     else:
